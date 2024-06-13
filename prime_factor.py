@@ -3,12 +3,11 @@ class PrimeFactor:
         factors = []
 
         if number > 1:
-            if number == 4 or number == 6 or number == 9:
+            if number == 4 or number == 6 or number == 9 or number == 12:
                 divisor = 2
                 while number > 1:
                     while number % divisor == 0:
                         factors.append(divisor)
-                        print(factors, number)
                         number //= divisor
                     divisor += 1
 
