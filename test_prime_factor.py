@@ -14,5 +14,9 @@ class TestPrimeFactor(TestCase):
     def test_prime_test_of_2(self):
         self.assertEqual([2], self.prime_factor.of(2))
 
-    def test_prime_Test_of_3(self):
+    def test_prime_test_of_3(self):
         self.assertEqual([3], self.prime_factor.of(3))
+
+    def test_prime_test_of_4(self):
+        self.assertEqual([2, 2], self.prime_factor.of(4))
+
